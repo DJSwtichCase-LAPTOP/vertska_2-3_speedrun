@@ -20,7 +20,7 @@
             padding: 1em;
             }
 
-            @media screen and (min-width: 576px) {
+            @media screen and (min-width: 710px) {
             .carousel-inner {
                 display: flex;
                 width: 90%;
@@ -34,6 +34,7 @@
                 flex: 0 0 calc(100% / 2);
             }
             }
+            
             @media screen and (min-width: 1024px) {
             .carousel-item {
                 display: block;
@@ -61,6 +62,18 @@
                         font-weight: bold;
                         padding: 10px;
                     }
+
+            @media (max-width:710px) {
+                .carousel-big {
+                    display: none;
+                }
+            }
+
+            @media (min-width:709px) {
+                .carousel-small{
+                    display: none;
+                }
+            }
         </style>
 </head>
 
@@ -70,7 +83,7 @@
     <div id="navbar"></div>
  
     
-<div style="padding:120px;">
+<div class="carousel-big" style="padding:120px;">
     <div class="container bg-body-tertiary py-3">
         <div id="testimonialCarousel" class="carousel">
             <div class="carousel-inner">
@@ -272,271 +285,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="card" style="width: 24rem;">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">My Melody</h5>
-                            <div class="text-center mb-3">
-                                <img src="pics/KU.avif" class="img-fluid" alt="Resident Image">
-                            </div>
-                            <div class="header">Resident Information</div>
-                            <table class="table">
-                                <tbody>
-                                    <tr><td>Birthday</td><td>18th of Jan</td></tr>
-                                    <tr>
-                                        <td>Liked Tags</td>
-                                        <td>
-                                            <img src="pics/1.webp" style="max-height: 36px; max-width:36px;">
-                                            <img src="pics/2.webp" style="max-height: 36px; max-width:36px;">
-                                            <img src="pics/3.webp" style="max-height: 36px; max-width:36px;">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gift</td>
-                                        <td>Flour</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Relations</td>
-                                        <td>
-                                            <div>Person 1</div>
-                                            <div>Person 2</div>
-                                            <div>Person 3</div>
-                                            <div>Person 4</div>
-                                            <div>Person 5</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Primary Location</td>
-                                        <td>
-                                            <img src="pics/plaza.webp" style="max-height: 48px; max-width:48px;">
-                                            Resident Plaza
-                                        </td>
-                                    </tr>
-                                    <tr><td>Shop</td><td>Big Smile Shop</td></tr>
-                                    <tr>
-                                        <td>Max Level</td>
-                                        <td>
-                                            <img src="pics/heart.webp" style="padding-bottom:5px; max-height: 24px; max-width:20px;">
-                                            20
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="header">Abilities</div>
-                            <table class="table">
-                                <tbody>
-                                    <tr>
-                                        <td>Best gifter</td>
-                                        <td>65% of extra gift drop</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Home builder</td>
-                                        <td>+1 Strawberry container after upgrading the cabin</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card" style="width: 24rem;">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Cinnamonroll</h5>
-                            <div class="text-center mb-3">
-                                <img src="pics/B.avif" class="img-fluid" alt="Resident Image">
-                            </div>
-                            <div class="header">Resident Information</div>
-                            <table class="table">
-                                <tbody>
-                                    <tr><td>Birthday</td><td>18th of Jan</td></tr>
-                                    <tr>
-                                        <td>Liked Tags</td>
-                                        <td>
-                                            <img src="pics/1.webp" style="max-height: 36px; max-width:36px;">
-                                            <img src="pics/2.webp" style="max-height: 36px; max-width:36px;">
-                                            <img src="pics/3.webp" style="max-height: 36px; max-width:36px;">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gift</td>
-                                        <td>Flour</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Relations</td>
-                                        <td>
-                                            <div>Person 1</div>
-                                            <div>Person 2</div>
-                                            <div>Person 3</div>
-                                            <div>Person 4</div>
-                                            <div>Person 5</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Primary Location</td>
-                                        <td>
-                                            <img src="pics/plaza.webp" style="max-height: 48px; max-width:48px;">
-                                            Resident Plaza
-                                        </td>
-                                    </tr>
-                                    <tr><td>Shop</td><td>Big Smile Shop</td></tr>
-                                    <tr>
-                                        <td>Max Level</td>
-                                        <td>
-                                            <img src="pics/heart.webp" style="padding-bottom:5px; max-height: 24px; max-width:20px;">
-                                            20
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="header">Abilities</div>
-                            <table class="table">
-                                <tbody>
-                                    <tr>
-                                        <td>Best gifter</td>
-                                        <td>65% of extra gift drop</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Home builder</td>
-                                        <td>+1 Strawberry container after upgrading the cabin</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card" style="width: 24rem;">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Cinnamonroll</h5>
-                            <div class="text-center mb-3">
-                                <img src="pics/PP.avif" class="img-fluid" alt="Resident Image">
-                            </div>
-                            <div class="header">Resident Information</div>
-                            <table class="table">
-                                <tbody>
-                                    <tr><td>Birthday</td><td>18th of Jan</td></tr>
-                                    <tr>
-                                        <td>Liked Tags</td>
-                                        <td>
-                                            <img src="pics/1.webp" style="max-height: 36px; max-width:36px;">
-                                            <img src="pics/2.webp" style="max-height: 36px; max-width:36px;">
-                                            <img src="pics/3.webp" style="max-height: 36px; max-width:36px;">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gift</td>
-                                        <td>Flour</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Relations</td>
-                                        <td>
-                                            <div>Person 1</div>
-                                            <div>Person 2</div>
-                                            <div>Person 3</div>
-                                            <div>Person 4</div>
-                                            <div>Person 5</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Primary Location</td>
-                                        <td>
-                                            <img src="pics/plaza.webp" style="max-height: 48px; max-width:48px;">
-                                            Resident Plaza
-                                        </td>
-                                    </tr>
-                                    <tr><td>Shop</td><td>Big Smile Shop</td></tr>
-                                    <tr>
-                                        <td>Max Level</td>
-                                        <td>
-                                            <img src="pics/heart.webp" style="padding-bottom:5px; max-height: 24px; max-width:20px;">
-                                            20
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="header">Abilities</div>
-                            <table class="table">
-                                <tbody>
-                                    <tr>
-                                        <td>Best gifter</td>
-                                        <td>65% of extra gift drop</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Home builder</td>
-                                        <td>+1 Strawberry container after upgrading the cabin</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card" style="width: 24rem;">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Cinnamonroll</h5>
-                            <div class="text-center mb-3">
-                                <img src="pics/CC.avif" class="img-fluid" alt="Resident Image">
-                            </div>
-                            <div class="header">Resident Information</div>
-                            <table class="table">
-                                <tbody>
-                                    <tr><td>Birthday</td><td>18th of Jan</td></tr>
-                                    <tr>
-                                        <td>Liked Tags</td>
-                                        <td>
-                                            <img src="pics/1.webp" style="max-height: 36px; max-width:36px;">
-                                            <img src="pics/2.webp" style="max-height: 36px; max-width:36px;">
-                                            <img src="pics/3.webp" style="max-height: 36px; max-width:36px;">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gift</td>
-                                        <td>Flour</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Relations</td>
-                                        <td>
-                                            <div>Person 1</div>
-                                            <div>Person 2</div>
-                                            <div>Person 3</div>
-                                            <div>Person 4</div>
-                                            <div>Person 5</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Primary Location</td>
-                                        <td>
-                                            <img src="pics/plaza.webp" style="max-height: 48px; max-width:48px;">
-                                            Resident Plaza
-                                        </td>
-                                    </tr>
-                                    <tr><td>Shop</td><td>Big Smile Shop</td></tr>
-                                    <tr>
-                                        <td>Max Level</td>
-                                        <td>
-                                            <img src="pics/heart.webp" style="padding-bottom:5px; max-height: 24px; max-width:20px;">
-                                            20
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="header">Abilities</div>
-                            <table class="table">
-                                <tbody>
-                                    <tr>
-                                        <td>Best gifter</td>
-                                        <td>65% of extra gift drop</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Home builder</td>
-                                        <td>+1 Strawberry container after upgrading the cabin</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                
+               
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -550,8 +299,217 @@
     </div>
 
 </div>
-    
 
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="card-body">
+                <h5 class="card-title text-center">My Melody</h5>
+                <div class="text-center mb-3">
+                    <img src="pics/MM.avif" class="img-fluid" alt="Resident Image">
+                </div>
+                <div class="header">Resident Information</div>
+                <table class="table">
+                    <tbody>
+                        <tr><td>Birthday</td><td>18th of Jan</td></tr>
+                        <tr>
+                            <td>Liked Tags</td>
+                            <td>
+                                <img src="pics/1.webp" style="max-height: 36px; max-width:36px;">
+                                <img src="pics/2.webp" style="max-height: 36px; max-width:36px;">
+                                <img src="pics/3.webp" style="max-height: 36px; max-width:36px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gift</td>
+                            <td>Flour</td>
+                        </tr>
+                        <tr>
+                            <td>Relations</td>
+                            <td>
+                                <div>Person 1</div>
+                                <div>Person 2</div>
+                                <div>Person 3</div>
+                                <div>Person 4</div>
+                                <div>Person 5</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Primary Location</td>
+                            <td>
+                                <img src="pics/plaza.webp" style="max-height: 48px; max-width:48px;">
+                                Resident Plaza
+                            </td>
+                        </tr>
+                        <tr><td>Shop</td><td>Big Smile Shop</td></tr>
+                        <tr>
+                            <td>Max Level</td>
+                            <td>
+                                <img src="pics/heart.webp" style="padding-bottom:5px; max-height: 24px; max-width:20px;">
+                                20
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="header">Abilities</div>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>Best gifter</td>
+                            <td>65% of extra gift drop</td>
+                        </tr>
+                        <tr>
+                            <td>Home builder</td>
+                            <td>+1 Strawberry container after upgrading the cabin</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card-body">
+                <h5 class="card-title text-center">My Melody</h5>
+                <div class="text-center mb-3">
+                    <img src="pics/MM.avif" class="img-fluid" alt="Resident Image">
+                </div>
+                <div class="header">Resident Information</div>
+                <table class="table">
+                    <tbody>
+                        <tr><td>Birthday</td><td>18th of Jan</td></tr>
+                        <tr>
+                            <td>Liked Tags</td>
+                            <td>
+                                <img src="pics/1.webp" style="max-height: 36px; max-width:36px;">
+                                <img src="pics/2.webp" style="max-height: 36px; max-width:36px;">
+                                <img src="pics/3.webp" style="max-height: 36px; max-width:36px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gift</td>
+                            <td>Flour</td>
+                        </tr>
+                        <tr>
+                            <td>Relations</td>
+                            <td>
+                                <div>Person 1</div>
+                                <div>Person 2</div>
+                                <div>Person 3</div>
+                                <div>Person 4</div>
+                                <div>Person 5</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Primary Location</td>
+                            <td>
+                                <img src="pics/plaza.webp" style="max-height: 48px; max-width:48px;">
+                                Resident Plaza
+                            </td>
+                        </tr>
+                        <tr><td>Shop</td><td>Big Smile Shop</td></tr>
+                        <tr>
+                            <td>Max Level</td>
+                            <td>
+                                <img src="pics/heart.webp" style="padding-bottom:5px; max-height: 24px; max-width:20px;">
+                                20
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="header">Abilities</div>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>Best gifter</td>
+                            <td>65% of extra gift drop</td>
+                        </tr>
+                        <tr>
+                            <td>Home builder</td>
+                            <td>+1 Strawberry container after upgrading the cabin</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- <div class="carousel-small" style="padding:120px;">
+    <div class="carousel-small-inner">
+        <div class="card-body">
+            <h5 class="card-title text-center">My Melody</h5>
+            <div class="text-center mb-3">
+                <img src="pics/MM.avif" class="img-fluid" alt="Resident Image">
+            </div>
+            <div class="header">Resident Information</div>
+            <table class="table">
+                <tbody>
+                    <tr><td>Birthday</td><td>18th of Jan</td></tr>
+                    <tr>
+                        <td>Liked Tags</td>
+                        <td>
+                            <img src="pics/1.webp" style="max-height: 36px; max-width:36px;">
+                            <img src="pics/2.webp" style="max-height: 36px; max-width:36px;">
+                            <img src="pics/3.webp" style="max-height: 36px; max-width:36px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gift</td>
+                        <td>Flour</td>
+                    </tr>
+                    <tr>
+                        <td>Relations</td>
+                        <td>
+                            <div>Person 1</div>
+                            <div>Person 2</div>
+                            <div>Person 3</div>
+                            <div>Person 4</div>
+                            <div>Person 5</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Primary Location</td>
+                        <td>
+                            <img src="pics/plaza.webp" style="max-height: 48px; max-width:48px;">
+                            Resident Plaza
+                        </td>
+                    </tr>
+                    <tr><td>Shop</td><td>Big Smile Shop</td></tr>
+                    <tr>
+                        <td>Max Level</td>
+                        <td>
+                            <img src="pics/heart.webp" style="padding-bottom:5px; max-height: 24px; max-width:20px;">
+                            20
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="header">Abilities</div>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>Best gifter</td>
+                        <td>65% of extra gift drop</td>
+                    </tr>
+                    <tr>
+                        <td>Home builder</td>
+                        <td>+1 Strawberry container after upgrading the cabin</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    
+</div> -->
     <script>
         fetch('navbar.html')
           .then(response => response.text()) 
@@ -560,58 +518,70 @@
           })
       </script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-    const multipleItemCarousel = document.querySelector("#testimonialCarousel");
-
-    if (window.matchMedia("(min-width: 576px)").matches) {
-        const carousel = new bootstrap.Carousel(multipleItemCarousel, {
-            interval: false
-        });
-
+   
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const multipleItemCarousel = document.querySelector("#testimonialCarousel");
         const carouselInner = document.querySelector(".carousel-inner");
-        const carouselItems = [...document.querySelectorAll(".carousel-item")];
+        const carouselItems = document.querySelectorAll(".carousel-item");
         const nextButton = document.querySelector(".carousel-control-next");
         const prevButton = document.querySelector(".carousel-control-prev");
 
-        let cardWidth = carouselItems[0].offsetWidth;
-        let scrollPosition = 0;
-        let visibleItems = window.matchMedia("(min-width: 1398px)").matches ? 3 : 2; // Adjust for responsiveness
+        function updateCarousel() {
+            if (window.innerWidth < 710) {
+                // ✅ Use Bootstrap's default behavior (single-item view)
+                multipleItemCarousel.classList.add("slide");
 
-        // Clone items for infinite looping
-        carouselItems.forEach(item => {
-            let clone = item.cloneNode(true);
-            carouselInner.appendChild(clone);
-        });
+                // Ensure only one item is visible
+                carouselInner.style.display = "";
+                carouselItems.forEach(item => {
+                    item.style.flex = "0 0 100%"; // Force one item per view
+                    item.style.maxWidth = "100%"; // Prevent multi-previewing
+                });
 
-        // Update carousel width
-        let totalCards = document.querySelectorAll(".carousel-item").length;
-        let carouselWidth = carouselInner.scrollWidth;
+            } else {
+                // ✅ Enable multi-item view for larger screens
+                multipleItemCarousel.classList.remove("slide");
 
-        nextButton.addEventListener("click", function () {
-            if (scrollPosition >= carouselWidth - cardWidth * visibleItems) {
-                scrollPosition = 0; // Reset to beginning
-                carouselInner.scrollTo({ left: scrollPosition, behavior: "instant" });
+                // Use a flex-based scrolling effect
+                let cardWidth = carouselItems[0].offsetWidth;
+                let scrollPosition = 0;
+                let visibleItems = window.matchMedia("(min-width: 1398px)").matches ? 3 : 2;
+
+                // Reset inline styles for larger screens
+                carouselInner.style.display = "flex";
+                carouselItems.forEach(item => {
+                    item.style.flex = "";
+                    item.style.maxWidth = "";
+                });
+
+                nextButton.addEventListener("click", function () {
+                    let maxScroll = carouselInner.scrollWidth - cardWidth * visibleItems;
+                    if (scrollPosition >= maxScroll) {
+                        scrollPosition = 0; // Reset to beginning
+                    } else {
+                        scrollPosition += cardWidth;
+                    }
+                    carouselInner.scrollTo({ left: scrollPosition, behavior: "smooth" });
+                });
+
+                prevButton.addEventListener("click", function () {
+                    if (scrollPosition <= 0) {
+                        scrollPosition = carouselInner.scrollWidth - cardWidth * visibleItems; // Go to last items
+                    } else {
+                        scrollPosition -= cardWidth;
+                    }
+                    carouselInner.scrollTo({ left: scrollPosition, behavior: "smooth" });
+                });
             }
-            scrollPosition += cardWidth;
-            carouselInner.scrollTo({ left: scrollPosition, behavior: "smooth" });
-        });
+        }
 
-        prevButton.addEventListener("click", function () {
-            if (scrollPosition <= 0) {
-                scrollPosition = carouselWidth - cardWidth * visibleItems; // Go to last items
-                carouselInner.scrollTo({ left: scrollPosition, behavior: "instant" });
-            }
-            scrollPosition -= cardWidth;
-            carouselInner.scrollTo({ left: scrollPosition, behavior: "smooth" });
-        });
-
-    } else {
-        multipleItemCarousel.classList.add("slide");
-    }
-});
-
-    
+        
+        updateCarousel();
+        window.addEventListener("resize", updateCarousel);
+    });
 </script>
+
+
 </body>
 </html>
