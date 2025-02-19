@@ -529,26 +529,26 @@
 
         function updateCarousel() {
             if (window.innerWidth < 710) {
-                // ✅ Use Bootstrap's default behavior (single-item view)
+              
                 multipleItemCarousel.classList.add("slide");
 
-                // Ensure only one item is visible
+                
                 carouselInner.style.display = "";
                 carouselItems.forEach(item => {
-                    item.style.flex = "0 0 100%"; // Force one item per view
-                    item.style.maxWidth = "100%"; // Prevent multi-previewing
+                    item.style.flex = "0 0 100%"; 
+                    item.style.maxWidth = "100%";
                 });
 
             } else {
-                // ✅ Enable multi-item view for larger screens
+                
                 multipleItemCarousel.classList.remove("slide");
 
-                // Use a flex-based scrolling effect
+               
                 let cardWidth = carouselItems[0].offsetWidth;
                 let scrollPosition = 0;
                 let visibleItems = window.matchMedia("(min-width: 1398px)").matches ? 3 : 2;
 
-                // Reset inline styles for larger screens
+                
                 carouselInner.style.display = "flex";
                 carouselItems.forEach(item => {
                     item.style.flex = "";
@@ -558,7 +558,7 @@
                 nextButton.addEventListener("click", function () {
                     let maxScroll = carouselInner.scrollWidth - cardWidth * visibleItems;
                     if (scrollPosition >= maxScroll) {
-                        scrollPosition = 0; // Reset to beginning
+                        scrollPosition = 0; 
                     } else {
                         scrollPosition += cardWidth;
                     }
@@ -567,7 +567,7 @@
 
                 prevButton.addEventListener("click", function () {
                     if (scrollPosition <= 0) {
-                        scrollPosition = carouselInner.scrollWidth - cardWidth * visibleItems; // Go to last items
+                        scrollPosition = carouselInner.scrollWidth - cardWidth * visibleItems; 
                     } else {
                         scrollPosition -= cardWidth;
                     }
