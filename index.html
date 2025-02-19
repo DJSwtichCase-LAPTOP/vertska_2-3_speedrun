@@ -4,50 +4,19 @@
     <meta charset="UTF-8">
     <title>Hello Kitty Island Adventure</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+
 </head>
 
 <body>
     <img src="pics/HKIA.jpg" id="home" alt="Full-Screen Image" class="img-fluid full-screen-image vw-100">
 
-    <!-- Navbar -->
-        <div class="container">
-            <nav class="navbar navbar-expand-md fixed-top">
-                <div class="container">
-                    <!-- <a class="navbar-brand fw-bold d-md-none" href="#">
-                        Test
-                    </a> -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mx-auto align-items-center">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#platforms">Platforms</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#ch">Characters</a>
-                            </li>
-                            <a class="navbar-brand fw-bold d-none d-md-block" href="#home">
-                                Home
-                            </a>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#yap">Community</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#gallery">Gallery</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    
+    <div id="navbar"></div>
+
      <!-- Characters -->
     <div class="container" id="ch" style="padding:80px 0px 80px 0px;">
         <div class="carousel slide" 
@@ -403,7 +372,19 @@
         </div>
     </section>
 
-    <script>$(function () {
+  
+    <script>
+        fetch('navbar.html')
+          .then(response => response.text()) 
+          .then(data => {
+            document.getElementById('navbar').innerHTML = data; 
+          })
+      </script>
+
+
+
+    <script>
+    $(function () {
         $('[data-toggle="tooltip"]').tooltip()
       })</script>
     

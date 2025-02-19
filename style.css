@@ -74,12 +74,13 @@ border: none;
 }
 .carousel-control-prev,
 .carousel-control-next {
-background-color: #910e0e;
+
 width: 6vh;
 height: 6vh;
-border-radius: 50%;
 top: 50%;
 transform: translateY(-50%);
+background-color: #2d65ceb4;
+border-radius:20px;
 }
 
 .card .img-wrapper {
