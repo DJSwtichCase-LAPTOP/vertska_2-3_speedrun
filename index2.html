@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Characters</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        .carousel img {
+  
+  border-radius: 50%;
+  margin-right: 1rem;
+  overflow: hidden;
+}
+.carousel-inner {
+  padding: 1em;
+}
+
+@media screen and (min-width: 576px) {
+  .carousel-inner {
+    display: flex;
+    width: 90%;
+    margin-inline: auto;
+    padding: 1em 0;
+    overflow: hidden;
+  }
+  .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100% / 2);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100% / 3);
+  }
+}
+.carousel .card {
+  margin: 0 0.5em;
+  border: 0;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 3rem;
+  height: 3rem;
+  background-color: grey;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+        </style>
+</head>
+
+<body>
+    <div class="container bg-body-tertiary py-3">
+        <div id="testimonialCarousel" class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card" style="width: 24rem;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Resident Title</h5>
+                            <div class="text-center mb-3">
+                                <img src="pics/MM.avif" class="img-fluid" alt="Resident Image">
+                            </div>
+                            <div class="header">Resident Information</div>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Birthday</td><td>18th of Jan</td></tr>
+                                    <tr>
+                                        <td>Liked Tags</td>
+                                        <td>
+                                            <img src="pics/1.webp" style="max-height: 36px; max-width:36px;">
+                                            <img src="pics/2.webp" style="max-height: 36px; max-width:36px;">
+                                            <img src="pics/3.webp" style="max-height: 36px; max-width:36px;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gift</td>
+                                        <td>Flour</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Relations</td>
+                                        <td>
+                                            <div>Person 1</div>
+                                            <div>Person 2</div>
+                                            <div>Person 3</div>
+                                            <div>Person 4</div>
+                                            <div>Person 5</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Primary Location</td>
+                                        <td>
+                                            <img src="pics/plaza.webp" style="max-height: 48px; max-width:48px;">
+                                            Resident Plaza
+                                        </td>
+                                    </tr>
+                                    <tr><td>Shop</td><td>Big Smile Shop</td></tr>
+                                    <tr>
+                                        <td>Max Level</td>
+                                        <td>
+                                            <img src="pics/heart.webp" style="padding-bottom:5px; max-height: 24px; max-width:20px;">
+                                            20
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="header">Abilities</div>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>Ability 1</td>
+                                        <td>Desc</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ability 1</td>
+                                        <td>Desc</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card" style="width: 24rem;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Resident Title</h5>
+                            <div class="text-center mb-3">
+                                <img src="pics/MM.avif" class="img-fluid" alt="Resident Image">
+                            </div>
+                            <div class="header">Resident Information</div>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Birthday</td><td>18th of Jan</td></tr>
+                                    <tr>
+                                        <td>Liked Tags</td>
+                                        <td>
+                                            <img src="pics/1.webp" style="max-height: 48px; max-width:48px;">
+                                            <img src="pics/2.webp" style="max-height: 48px; max-width:48px;">
+                                            <img src="pics/3.webp" style="max-height: 48px; max-width:48px;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gift</td>
+                                        <td>Flour</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Relations</td>
+                                        <td>
+                                            <div>Person 1</div>
+                                            <div>Person 2</div>
+                                            <div>Person 3</div>
+                                            <div>Person 4</div>
+                                            <div>Person 5</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Primary Location</td>
+                                        <td>
+                                            <img src="pics/plaza.webp" style="max-height: 48px; max-width:48px;">
+                                            Resident Plaza
+                                        </td>
+                                    </tr>
+                                    <tr><td>Shop</td><td>Big Smile Shop</td></tr>
+                                    <tr>
+                                        <td>Max Level</td>
+                                        <td>
+                                            <img src="pics/heart.webp" style="padding-bottom:5px; max-height: 24px; max-width:20px;">
+                                            20
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="header">Abilities</div>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>Ability 1</td>
+                                        <td>Desc</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ability 1</td>
+                                        <td>Desc</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card" style="width: 24rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Resident Title</h5>
+                            <div class="text-center">
+                                <img src="pics/MM.avif" class="img-fluid" alt="Resident Image">
+                            </div>
+                            <div class="header">Resident Information</div>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Birthday</td><td>18th of Jan</td></tr>
+                                    <tr>
+                                        <td>Liked Tags</td>
+                                        <td>
+                                            <img src="pics/1.webp" style="max-height: 36px; max-width:36px;">
+                                            <img src="pics/2.webp" style="max-height: 48px; max-width:48px;">
+                                            <img src="pics/3.webp" style="max-height: 48px; max-width:48px;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gift</td>
+                                        <td>Flour</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Relations</td>
+                                        <td>
+                                            <div>Person 1</div>
+                                            <div>Person 2</div>
+                                            <div>Person 3</div>
+                                            <div>Person 4</div>
+                                            <div>Person 5</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Primary Location</td>
+                                        <td>
+                                            <img src="pics/plaza.webp" style="max-height: 48px; max-width:48px;">
+                                            Resident Plaza
+                                        </td>
+                                    </tr>
+                                    <tr><td>Shop</td><td>Big Smile Shop</td></tr>
+                                    <tr>
+                                        <td>Max Level</td>
+                                        <td>
+                                            <img src="pics/heart.webp" style="padding-bottom:5px; max-height: 24px; max-width:20px;">
+                                            20
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="header">Abilities</div>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>Ability 1</td>
+                                        <td>Desc</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ability 1</td>
+                                        <td>Desc</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card" style="width: 24rem;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Resident Title</h5>
+                            <div class="text-center mb-3">
+                                <img src="pics/MM.avif" class="img-fluid" alt="Resident Image">
+                            </div>
+                            <div class="header">Resident Information</div>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Birthday</td><td>18th of Jan</td></tr>
+                                    <tr>
+                                        <td>Liked Tags</td>
+                                        <td>
+                                            <img src="pics/1.webp" style="max-height: 48px; max-width:48px;">
+                                            <img src="pics/2.webp" style="max-height: 48px; max-width:48px;">
+                                            <img src="pics/3.webp" style="max-height: 48px; max-width:48px;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gift</td>
+                                        <td>Flour</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Relations</td>
+                                        <td>
+                                            <div>Person 1</div>
+                                            <div>Person 2</div>
+                                            <div>Person 3</div>
+                                            <div>Person 4</div>
+                                            <div>Person 5</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Primary Location</td>
+                                        <td>
+                                            <img src="pics/plaza.webp" style="max-height: 48px; max-width:48px;">
+                                            Resident Plaza
+                                        </td>
+                                    </tr>
+                                    <tr><td>Shop</td><td>Big Smile Shop</td></tr>
+                                    <tr>
+                                        <td>Max Level</td>
+                                        <td>
+                                            <img src="pics/heart.webp" style="padding-bottom:5px; max-height: 24px; max-width:20px;">
+                                            20
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="header">Abilities</div>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>Ability 1</td>
+                                        <td>Desc</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ability 1</td>
+                                        <td>Desc</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card" style="width: 24rem;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Resident Title</h5>
+                            <div class="text-center">
+                                <img src="pics/MM.avif" class="img-fluid" style="min-height:400px;" alt="Resident Image">
+                            </div>
+                            <div class="header">Resident Information</div>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Birthday</td><td>18th of Jan</td></tr>
+                                    <tr>
+                                        <td>Liked Tags</td>
+                                        <td>
+                                            <img src="pics/1.webp" style="max-height: 48px; max-width:48px;">
+                                            <img src="pics/2.webp" style="max-height: 48px; max-width:48px;">
+                                            <img src="pics/3.webp" style="max-height: 48px; max-width:48px;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gift</td>
+                                        <td>Flour</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Relations</td>
+                                        <td>
+                                            <div>Person 1</div>
+                                            <div>Person 2</div>
+                                            <div>Person 3</div>
+                                            <div>Person 4</div>
+                                            <div>Person 5</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Primary Location</td>
+                                        <td>
+                                            <img src="pics/plaza.webp" style="max-height: 48px; max-width:48px;">
+                                            Resident Plaza
+                                        </td>
+                                    </tr>
+                                    <tr><td>Shop</td><td>Big Smile Shop</td></tr>
+                                    <tr>
+                                        <td>Max Level</td>
+                                        <td>
+                                            <img src="pics/heart.webp" style="padding-bottom:5px; max-height: 24px; max-width:20px;">
+                                            20
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="header">Abilities</div>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>Ability 1</td>
+                                        <td>Desc</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ability 1</td>
+                                        <td>Desc</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card" style="width: 24rem;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Resident Title</h5>
+                            <div class="text-center mb-3">
+                                <img src="pics/MM.avif" class="img-fluid" alt="Resident Image">
+                            </div>
+                            <div class="header">Resident Information</div>
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Birthday</td><td>18th of Jan</td></tr>
+                                    <tr>
+                                        <td>Liked Tags</td>
+                                        <td>
+                                            <img src="pics/1.webp" style="max-height: 48px; max-width:48px;">
+                                            <img src="pics/2.webp" style="max-height: 48px; max-width:48px;">
+                                            <img src="pics/3.webp" style="max-height: 48px; max-width:48px;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gift</td>
+                                        <td>Flour</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Relations</td>
+                                        <td>
+                                            <div>Person 1</div>
+                                            <div>Person 2</div>
+                                            <div>Person 3</div>
+                                            <div>Person 4</div>
+                                            <div>Person 5</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Primary Location</td>
+                                        <td>
+                                            <img src="pics/plaza.webp" style="max-height: 48px; max-width:48px;">
+                                            Resident Plaza
+                                        </td>
+                                    </tr>
+                                    <tr><td>Shop</td><td>Big Smile Shop</td></tr>
+                                    <tr>
+                                        <td>Max Level</td>
+                                        <td>
+                                            <img src="pics/heart.webp" style="padding-bottom:5px; max-height: 24px; max-width:20px;">
+                                            20
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="header">Abilities</div>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>Ability 1</td>
+                                        <td>Desc</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ability 1</td>
+                                        <td>Desc</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <script>
+        const multipleItemCarousel = document.querySelector("#testimonialCarousel");
+
+if (window.matchMedia("(min-width:576px)").matches) {
+  const carousel = new bootstrap.Carousel(multipleItemCarousel, {
+    interval: false,
+  });
+
+  const carouselInner = document.querySelector(".carousel-inner");
+  const carouselItems = document.querySelectorAll(".carousel-item");
+  const nextBtn = document.querySelector(".carousel-control-next");
+  const prevBtn = document.querySelector(".carousel-control-prev");
+
+  let carouselWidth = carouselInner.scrollWidth;
+  let cardWidth = carouselItems[0].offsetWidth; 
+  let scrollPosition = 0;
+
+  nextBtn.addEventListener("click", function () {
+    if (scrollPosition < carouselWidth - cardWidth * 3) {
+      console.log("next");
+      scrollPosition += cardWidth;
+      carouselInner.scrollTo({ left: scrollPosition, behavior: "smooth" });
+    }
+  });
+
+  prevBtn.addEventListener("click", function () {
+    if (scrollPosition > 0) {
+      scrollPosition -= cardWidth;
+      carouselInner.scrollTo({ left: scrollPosition, behavior: "smooth" });
+    }
+  });
+} else {
+  multipleItemCarousel.classList.add("slide");
+}
+
+    </script>
+</body>
